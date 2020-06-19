@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Staatliches:regular);
+
+body { font-size: x-large;
+    font-family: 'Staatliches';
+    color: rgb(137, 204, 209);
+    background-image: url('1W2A2981.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+/* #restaurant{margin-right: 10rem;}
+#country{margin-right: 10rem;}
+#city{margin-right: 10rem;}
+#speciality{margin-right: 10rem;} */
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 10rem;
+    text-align: center;
+    
+}
+button, input:hover{background-color: rgba(210, 232, 233, 0.479);}
+select{
+    height: 1.5rem;
+    border-style: none;
+background-color: rgba(240, 248, 255, 0.199);}
+
+input{ height: 1.5rem;
+border-style: none;
+background-color: rgba(240, 248, 255, 0.199);}
+/* #restaurant {
+    display: inline-block
+    float: right;} */
