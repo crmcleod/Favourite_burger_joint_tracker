@@ -32,7 +32,9 @@ input:hover{background-color: rgba(210, 232, 233, 0.479);}
     width: 12rem;
 border-style: none;
 background-color: rgba(240, 248, 255, 0.199);}
-
+#delete-all:hover, #save:hover{background-color: rgba(210, 232, 233, 0.479);
+font-size: x-large;
+font-weight: bolder;}
 button{display: inline-block;}
 select{
     height: 1.5rem;
