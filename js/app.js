@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const saveButton = document.querySelector('#new-item-form');
     saveButton.addEventListener('submit', handleSaveButtonSubmit);
     
+    const clearButton  = document.querySelector('#delete-all');
+    clearButton.addEventListener('click', handleClearButtonClick);
+
 })
 
 const handleSaveButtonSubmit = function (event) {
@@ -17,7 +20,7 @@ const createRestaurantListItem = function (form) {
     const restaurantListItem = document.createElement('li');
     restaurantListItem.classList.add('restaurant-list-item');
 
-    const restaurant = document.createElement('h3');
+    const restaurant = document.createElement('h2');
     restaurant.textContent = form.restaurant.value;
     restaurantListItem.appendChild(restaurant);
 
@@ -34,4 +37,8 @@ const createRestaurantListItem = function (form) {
     restaurantListItem.appendChild(speciality);
 
     return restaurantListItem;
+}
+const handleClearButtonClick = function (event) {
+    const restaurantList = document.querySelector('#restaurant-list');
+    restaurantList.innerHTML = '';
 }

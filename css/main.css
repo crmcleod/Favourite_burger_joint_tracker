@@ -1,8 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace:regular);
+/* @media only screen and (min-width:1200px) */
+.list-header {
+    padding-left:17%
+}
+#form-wrapper {
+    padding-left: 17%
 
-body { font-size: x-large;
+}
+#delete-all{position: absolute;
+top:13rem;
+left: 30rem}
+.buttons{
+    padding-left:17%
+}
+body { margin-top: 5rem;
+    font-size: x-large;
     font-family: 'Covered By Your Grace';
-    color: rgba(179, 226, 230, 0.596);
+    color: rgba(216, 239, 241, 0.644);
     background-image: url('1W2A2981.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,6 +24,13 @@ body { font-size: x-large;
     background-position-x: right;
     background-position-y: bottom;
 }
+
+#restaurant-list {
+display: flex;
+flex-wrap: wrap;
+list-style-type: none;
+width: 60%;}
+
 /* #restaurant{margin-right: 10rem;}
 #country{margin-right: 10rem;}
 #city{margin-right: 10rem;}
@@ -23,7 +44,8 @@ label{
     text-align: center;
     
 }
-input:hover{background-color: rgba(210, 232, 233, 0.479);}
+input:hover{
+    background-color: rgba(210, 232, 233, 0.479);}
 
 #delete-all, #save{ margin: 1rem;
     font-family: 'Covered By Your Grace';
@@ -41,7 +63,9 @@ select{
     width: 10rem;
     border-style: none;
 background-color: rgba(240, 248, 255, 0.199);}
+
 h1{margin-left: 2rem;}
+
 input{ 
     font-family: 'Covered By Your Grace';
     font-size:large;
@@ -52,3 +76,19 @@ background-color: rgba(240, 248, 255, 0.199);}
 /* #restaurant {
     display: inline-block
     float: right;} */
+
+/* #form-wrapper {
+    width:67% */
+/* } */
+
+
+.restaurant-list-item {
+    text-align: center;
+    color: rgba(179, 226, 230, 0.664);
+    background-color: rgba(46, 44, 38, 0.418);
+    line-height: 0em;
+    margin: 0.5rem 0.5rem;
+    padding: 0rem 1rem;
+    border-radius: 3%;
+}
+
