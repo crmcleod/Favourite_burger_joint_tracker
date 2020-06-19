@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Staatliches:regular);
+@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace:regular);
 
 body { font-size: x-large;
-    font-family: 'Staatliches';
-    color: rgb(137, 204, 209);
+    font-family: 'Covered By Your Grace';
+    color: rgba(179, 226, 230, 0.596);
     background-image: url('1W2A2981.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,13 +23,28 @@ label{
     text-align: center;
     
 }
-button, input:hover{background-color: rgba(210, 232, 233, 0.479);}
-select{
-    height: 1.5rem;
-    border-style: none;
+input:hover{background-color: rgba(210, 232, 233, 0.479);}
+
+#delete-all, #save{ margin: 1rem;
+    font-family: 'Covered By Your Grace';
+    font-size:large;
+    height: 3rem;
+    width: 12rem;
+border-style: none;
 background-color: rgba(240, 248, 255, 0.199);}
 
-input{ height: 1.5rem;
+button{display: inline-block;}
+select{
+    height: 1.5rem;
+    width: 10rem;
+    border-style: none;
+background-color: rgba(240, 248, 255, 0.199);}
+h1{margin-left: 2rem;}
+input{ 
+    font-family: 'Covered By Your Grace';
+    font-size:large;
+    height: 1.5rem;
+    width: 10rem;
 border-style: none;
 background-color: rgba(240, 248, 255, 0.199);}
 /* #restaurant {
