@@ -7,10 +7,11 @@
     padding-left: 17%
 
 }
-#delete-all{position: absolute;
+/* #delete-all{position: absolute;
 top:13rem;
-left: 30rem}
-.buttons{
+left: 30rem} */
+.buttons{flex-wrap: nowrap;
+    /* grid-template-columns: 30% 30%; */
     padding-left:17%
 }
 body { margin-top: 5rem;
@@ -26,10 +27,14 @@ body { margin-top: 5rem;
 }
 
 #restaurant-list {
-display: flex;
-flex-wrap: wrap;
-list-style-type: none;
-width: 60%;}
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 60%;
+}
 
 /* #restaurant{margin-right: 10rem;}
 #country{margin-right: 10rem;}
@@ -38,7 +43,7 @@ width: 60%;}
 
 label{
     display: inline-block;
-    float: left;
+    /* float: left; */
     clear: left;
     width: 10rem;
     text-align: center;
@@ -52,27 +57,49 @@ input:hover{
     font-size:large;
     height: 3rem;
     width: 12rem;
-border-style: none;
-background-color: rgba(240, 248, 255, 0.199);}
-#delete-all:hover, #save:hover{background-color: rgba(210, 232, 233, 0.479);
-font-size: x-large;
-font-weight: bolder;}
+    border-style: none;
+    background-color: rgba(240, 248, 255, 0.199);}
+    #delete-all:hover, #save:hover{background-color: rgba(210, 232, 233, 0.479);
+    font-size: x-large;
+    font-weight: bolder;}
+
 button{display: inline-block;}
+
 select{
     height: 1.5rem;
     width: 10rem;
     border-style: none;
-background-color: rgba(240, 248, 255, 0.199);}
+    background-color: rgba(240, 248, 255, 0.199);}
 
 h1{margin-left: 2rem;}
+#whitespace{grid-area:whitespace}
+#rating1{grid-area: head1;}
+#rating2{grid-area: head2;}
+#rating3{grid-area: head3;}
+#rating4{grid-area: head4;}
+#rating5{grid-area: head5;}
+#rateno1{grid-area: drop1}
+#rateno2{grid-area: drop2}
+#rateno3{grid-area: drop3}
+#rateno4{grid-area: drop4}
+#rateno5{grid-area: drop5}
 
+
+.raterate{margin-top: 0.5rem;
+    width: 12rem;
+    display: grid;
+    grid-template-areas: 'whitespace head1 head2 head3 head4 head5'
+    'whitespace drop1 drop2 drop3 drop4 drop5';
+    grid-gap: 0.5rem;
+
+}
 input{ 
     font-family: 'Covered By Your Grace';
     font-size:large;
     height: 1.5rem;
     width: 10rem;
-border-style: none;
-background-color: rgba(240, 248, 255, 0.199);}
+    border-style: none;
+    background-color: rgba(240, 248, 255, 0.199);}
 /* #restaurant {
     display: inline-block
     float: right;} */
@@ -80,7 +107,24 @@ background-color: rgba(240, 248, 255, 0.199);}
 /* #form-wrapper {
     width:67% */
 /* } */
+input[type=radio]{
+    opacity: 30%;
+    color: none;
+    box-shadow: none;
+    outline: none;
+    width: 1rem; height: 1rem;
+}
+#rating{outline-style: none;}
+.rating{border-style: none;
 
+    flex-direction: row;
+    width: 26%;
+    size: 2rem;
+}
+#speciality{
+    font-family: 'Covered By Your Grace';
+    font-size: large;
+}
 
 .restaurant-list-item {
     text-align: center;
@@ -90,5 +134,9 @@ background-color: rgba(240, 248, 255, 0.199);}
     margin: 0.5rem 0.5rem;
     padding: 0rem 1rem;
     border-radius: 3%;
+}
+
+.restaurant-list-item:hover{
+    color: mintcream;
 }
 

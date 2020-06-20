@@ -31,16 +31,36 @@
                         <option value="Vegan">Vegan</option>
                     </select>
                 </div>
+                <div class = form-item">
+                    <label for="best-burger" class="primary">Best burger</label>
+                    <input type="text" id="burger" />
+                </div>
+                <div class="raterate">
+                    <label for="rating" class="primary">Rating</label>
+                    <!-- <span class="rating"> -->
+                    <input id ="rating1" type="radio" name="rating" value="1"><i></i>
+                    <input id ="rating2" type="radio" name="rating" value="2"><i></i>
+                    <input id = "rating3" type="radio" name="rating" value="3"><i></i>
+                    <input id = "rating4" type="radio" name="rating" value="4"><i></i>
+                    <input id = "rating5" type="radio" name="rating" value="5"><i></i>
+                    <!-- </span> -->
+                    <br>
+
+                        <i id="rateno1">1</i><i id="rateno2">2</i><i id="rateno3">3</i><i id="rateno4">4</i><i id="rateno5">5</i>
+                </span>
+                </div>
+                </div>
             </div>
             <div class ="buttons">
             <input id ="save" type="submit" value="Serve it up!"/>
         </form>
-            </div>
+            
             <button id="delete-all">Clear your plate!</button>
-        
+        </div>
         <div class="list-header">
         <h1>What's on the table?</h1>
         </div>
         <ul id="restaurant-list"></ul>
+
     </body>
 </html>
