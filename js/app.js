@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const saveButton = document.querySelector('#new-item-form');
     saveButton.addEventListener('submit', handleSaveButtonSubmit);
     
+    // const radioButton = document.querySelector('#rating');
+    // radioButton.addEventListener('click', handleRadioButton);
+    
     const clearButton  = document.querySelector('#delete-all');
     clearButton.addEventListener('click', handleClearButtonClick);
 
@@ -15,6 +18,10 @@ const handleSaveButtonSubmit = function (event) {
     restaurantList.appendChild(restaurantListItem);
     event.target.reset();
 }
+
+// const handleRadioButton = function (event) {
+
+// }
 
 const createRestaurantListItem = function (form) {
     const restaurantListItem = document.createElement('li');
@@ -35,6 +42,14 @@ const createRestaurantListItem = function (form) {
     const speciality = document.createElement('h4');
     speciality.textContent = form.speciality.value;
     restaurantListItem.appendChild(speciality);
+
+    const burger = document.createElement('h4');
+    burger.textContent = form.burger.value;
+    restaurantListItem.appendChild(burger);
+
+    const rating = document.createElement('h4');
+    rating.textContent = form.rating.value;
+    restaurantListItem.appendChild(rating);
 
     return restaurantListItem;
 }

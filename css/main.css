@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace:regular);
-/* @media only screen and (min-width:1200px) */
 .list-header {
     padding-left:17%
 }
@@ -7,12 +6,23 @@
     padding-left: 17%
 
 }
-/* #delete-all{position: absolute;
-top:13rem;
-left: 30rem} */
-.buttons{flex-wrap: nowrap;
-    /* grid-template-columns: 30% 30%; */
-    padding-left:17%
+#onefive > i{padding-left: 0.82rem;
+padding-right: 0.82rem;}
+#score-wrapper{
+position: relative;
+margin-left: 10rem;
+margin-top: 0cm;
+height: 2rem;
+width: 10rem;
+
+}
+
+.buttondelete, .buttonsave{
+    display: flexbox;
+    margin-left: 17%;
+    padding-left: 8.5rem;
+    flex-direction: row;
+
 }
 body { margin-top: 5rem;
     font-size: x-large;
@@ -36,14 +46,8 @@ body { margin-top: 5rem;
     width: 60%;
 }
 
-/* #restaurant{margin-right: 10rem;}
-#country{margin-right: 10rem;}
-#city{margin-right: 10rem;}
-#speciality{margin-right: 10rem;} */
-
 label{
     display: inline-block;
-    /* float: left; */
     clear: left;
     width: 10rem;
     text-align: center;
@@ -59,11 +63,14 @@ input:hover{
     width: 12rem;
     border-style: none;
     background-color: rgba(240, 248, 255, 0.199);}
-    #delete-all:hover, #save:hover{background-color: rgba(210, 232, 233, 0.479);
-    font-size: x-large;
-    font-weight: bolder;}
 
-button{display: inline-block;}
+#delete-all:hover, #save:hover{
+    background-color: rgba(210, 232, 233, 0.479);
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
 
 select{
     height: 1.5rem;
@@ -72,27 +79,9 @@ select{
     background-color: rgba(240, 248, 255, 0.199);}
 
 h1{margin-left: 2rem;}
-#whitespace{grid-area:whitespace}
-#rating1{grid-area: head1;}
-#rating2{grid-area: head2;}
-#rating3{grid-area: head3;}
-#rating4{grid-area: head4;}
-#rating5{grid-area: head5;}
-#rateno1{grid-area: drop1}
-#rateno2{grid-area: drop2}
-#rateno3{grid-area: drop3}
-#rateno4{grid-area: drop4}
-#rateno5{grid-area: drop5}
+#rateno1{
+color: royalblue;}
 
-
-.raterate{margin-top: 0.5rem;
-    width: 12rem;
-    display: grid;
-    grid-template-areas: 'whitespace head1 head2 head3 head4 head5'
-    'whitespace drop1 drop2 drop3 drop4 drop5';
-    grid-gap: 0.5rem;
-
-}
 input{ 
     font-family: 'Covered By Your Grace';
     font-size:large;
@@ -100,13 +89,7 @@ input{
     width: 10rem;
     border-style: none;
     background-color: rgba(240, 248, 255, 0.199);}
-/* #restaurant {
-    display: inline-block
-    float: right;} */
 
-/* #form-wrapper {
-    width:67% */
-/* } */
 input[type=radio]{
     opacity: 30%;
     color: none;
@@ -114,6 +97,7 @@ input[type=radio]{
     outline: none;
     width: 1rem; height: 1rem;
 }
+input[type=radio]:hover{opacity: 100%;}
 #rating{outline-style: none;}
 .rating{border-style: none;
 
