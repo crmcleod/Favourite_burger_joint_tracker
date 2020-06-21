@@ -1,9 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace:regular);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower:regular);
+#order-result{font-family: 'Indie Flower';
+    font-size: smaller;
+    margin-left: 1.5vw;
+    margin-top: 4.2vw;
+    color: rgba(0, 101, 252, 0.945);
+    position: absolute;
+    display: grid;
+    max-width: 9.5vw;
+    word-wrap: break-word;
+    word-break: keep-all;
+    }
+#notepad{position: absolute;
+    display: flexbox;
+    width: 12%;
+}
+#order{
+    display: flexbox;
+    margin-left: 1.5vw;
+    margin-top: 2.3vw;
+    color: grey;
+    font-size: 1.5vw;
+    position: absolute;}
+
 .list-header {
     padding-left:17%
 }
 #form-wrapper {
-    padding-left: 17%
+    padding-left: 15%
 
 }
 #onefive > i{padding-left: 0.82rem;
@@ -19,7 +43,7 @@ width: 10rem;
 
 .buttondelete, .buttonsave{
     display: flexbox;
-    margin-left: 17%;
+    margin-left: 15%;
     padding-left: 8.5rem;
     flex-direction: row;
 
