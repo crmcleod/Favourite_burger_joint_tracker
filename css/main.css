@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace:regular);
 @import url(https://fonts.googleapis.com/css?family=Indie+Flower:regular);
-#order-result{font-family: 'Indie Flower';
+#order-result{
+    
+    font-family: 'Indie Flower';
     font-size: smaller;
     margin-left: 1.5vw;
     margin-top: 4.2vw;
-    color: rgba(0, 101, 252, 0.945);
+    color: rgba(4, 62, 148, 0.582);
     position: absolute;
     display: grid;
     max-width: 9.5vw;
@@ -17,9 +19,9 @@
 }
 #order{
     display: flexbox;
-    margin-left: 1.5vw;
-    margin-top: 2.3vw;
-    color: grey;
+    margin-left: 1.7vw;
+    margin-top: 2.5vw;
+    color: rgb(59, 59, 59);
     font-size: 1.5vw;
     position: absolute;}
 
