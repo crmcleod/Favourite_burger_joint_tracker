@@ -19,7 +19,6 @@ const handleSaveButtonSubmit = function (event) {
 }
 
 const handleOrderInput = function (event) {
-    console.log('somethings happening');
         const resultParagraph = document.querySelector('#order-result');
         resultParagraph.textContent = `${event.target.value}`;
 }
